@@ -234,7 +234,7 @@ let libros = [
         isbn: "978-84-9759-379-9",
         description: "La búsqueda de un hijo por su padre, ambientada en un pueblo fantasmal de México.",
         condition: "Nuevo",
-        ubicacion: "Librería Fantástica",
+        location: "Librería Fantástica",
         publicationDate: "1955",
         publisher: "Minotauro",
         pages: 124
@@ -249,7 +249,7 @@ let libros = [
         isbn: "978-84-9759-378-2",
         description: "La historia de Gregorio Samsa, quien se despierta un día transformado en un insecto.",
         condition: "Nuevo",
-        ubicacion: "Librería Nacional",
+        location: "Librería Nacional",
         publicationDate: "1915",
         publisher: "Planeta",
         pages: 224
@@ -264,7 +264,7 @@ let libros = [
         isbn: "978-84-235-0349-8",
         description: "Una novela semi-autobiográfica que narra la historia de un hombre que busca su lugar en el mundo.",
         condition: "Nuevo",
-        ubicacion: "Librería Nacional",
+        location: "Librería Nacional",
         publicationDate: "1954",
         publisher: "Alfaguara",
         pages: 272
@@ -279,7 +279,7 @@ let libros = [
         isbn: "978-958-748-073-2",
         description: " Una novela que sigue la investigación de dos detectives en la Ciudad de México.",
         condition: "Nuevo",
-        ubicacion: " Librería Universitaria",
+        location: " Librería Universitaria",
         publicationDate: "2017",
         publisher: "Planeta",
         pages: 288
@@ -294,7 +294,7 @@ let libros = [
         isbn: "978-958-42-3809-1",
         description: "Una novela que narra la historia de una adolescente que busca su identidad en un mundo en crisis.",
         condition: "Nuevo",
-        ubicacion: " Librería Kalma",
+        location: " Librería Kalma",
         publicationDate: "2005",
         publisher: "Norma",
         pages: 208
@@ -309,7 +309,7 @@ let libros = [
         isbn: "978-84-663-3279-5",
         description: "Una novela de aventuras que sigue a dos niños que viajan a la selva amazónica.",
         condition: "Nuevo",
-        ubicacion: " Librería Gato Gris",
+        location: " Librería Gato Gris",
         publicationDate: "2002",
         publisher: "Alfaguara",
         pages: 384
@@ -324,7 +324,7 @@ let libros = [
         isbn: "978-84-663-3545-9",
         description: "Una novela de aventuras que sigue a dos niños que viajan a la selva amazónica.",
         condition: "Nuevo",
-        ubicacion: " Librería Gato Gris",
+        location: " Librería Gato Gris",
         publicationDate: "2005",
         publisher: "Planeta",
         pages: 544
@@ -351,25 +351,54 @@ function createBook(book) {
     title.textContent = book.title
     title.classList.add("title-book")
 
-    const author = document.createElement('p')
+    const author = document.createElement('li')
     author.textContent = book.author
-    author.classList.add("paragraph-author")
+    author.classList.add("list-author")
     
-    const gender = document.createElement('p')
+    const gender = document.createElement('li')
     gender.textContent = book.gender
-    gender.classList.add("paragraph-gender")
+    gender.classList.add("list-gender")
 
-    const description = document.createElement('p')
+    const description = document.createElement('li')
     description.textContent = book.description
+    description.classList.add('list-description')
+
+    const condition = document.createElement('li')
+    condition.textContent = book.condition
+    condition.classList.add('list-condition')
+
+    const location = document.createElement('li')
+    location.textContent = book.location
+    location.classList.add('list-location')
+
+    const publicationDate = document.createElement('li')
+    publicationDate.textContent = book.publicationDate
+    publicationDate.classList.add('list-publicationDate')
+
+    const publisher = document.createElement('li')
+    publisher.textContent = book.publisher
+    publisher.classList.add('list-publisher')
+
+    const pages = document.createElement('li')
+    pages.textContent = book.pages
+    pages.classList.add("list-pages")
+
+
 
     myBook.appendChild(title)
     myBook.appendChild(author)
     myBook.appendChild(gender)
     myBook.appendChild(description)
+    myBook.appendChild(condition)
+    myBook.appendChild(location)
+    myBook.appendChild(publicationDate)
+    myBook.appendChild(publisher)
+    myBook.appendChild(pages)
+
     
 
     body.appendChild(myBook)
    
 }
+        
 
-export {libros};

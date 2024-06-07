@@ -2,23 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
     width: 200vh;
-    height: 100vh;
+    height: 200vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .book {
-    width: 16rem;
-    height: 14rem;
-    padding: 0.5rem;
+    
+    list-style: circle;
+    line-height: 25px;
+    width: 19rem;
+    height: 19rem;
+    padding: 1rem;
     border-radius: 10px;
     border: double 2px #3f3d3d;
     margin: 1rem;
-    background-color: #6969c6;
+    background-color: #13a3d3ce;
+    box-shadow: 1px 1px 10px 5px #04caf7;
     color: #fff;
+    
+}
+
+.title-book{
+    padding-bottom: 5px;
 }
