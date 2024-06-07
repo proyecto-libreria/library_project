@@ -2,7 +2,7 @@ let libros = [
     {
         title: "El Alquimista",
         author: "Paulo Coelho",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 25000,
         format: "Físico",
@@ -17,7 +17,7 @@ let libros = [
     {
         title: "Cien años de soledad",
         author: "Gabriel García Márquez",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 30000,
         format: "Físico",
@@ -32,7 +32,7 @@ let libros = [
     {
         title: "El Señor de los Anillos",
         author: "J.R.R. Tolkien",
-        genre: "Fantasía",
+        gender: "Fantasía",
         language: "Español",
         price: 40000,
         format: "Físico",
@@ -47,7 +47,7 @@ let libros = [
     {
         title: "La Sombra del Viento",
         author: "Carlos Ruiz Zafón",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 28000,
         format: "Físico",
@@ -62,7 +62,7 @@ let libros = [
     {
         title: "El Principito",
         author: "Antoine de Saint-Exupéry",
-        genre: "Ficción",
+        gender: "Ficción",
         language: "Español",
         price: 18000,
         format: "Físico",
@@ -77,7 +77,7 @@ let libros = [
     {
         title: "1984",
         author: "George Orwell",
-        genre: "Dystopia",
+        gender: "Dystopia",
         language: "Español",
         price: 22000,
         format: "Físico",
@@ -92,7 +92,7 @@ let libros = [
     {
         title: "El Amor en los Tiempos del Cólera",
         author: "Gabriel García Márquez",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 35000,
         format: "Físico",
@@ -107,7 +107,7 @@ let libros = [
     {
         title: "La Casa de los Espíritus",
         author: "Isabel Allende",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 32000,
         format: "Físico",
@@ -122,7 +122,7 @@ let libros = [
     {
         title: "El Aleph",
         author: "Jorge Luis Borges",
-        genre: "Cuentos",
+        gender: "Cuentos",
         language: "Español",
         price: 25000,
         format: "Físico",
@@ -137,7 +137,7 @@ let libros = [
     {
         title: "La Ciudad y los Perros",
         author: "Mario Vargas Llosa",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 28000,
         format: "Físico",
@@ -152,7 +152,7 @@ let libros = [
     {
         title: "El Nombre de la Rosa",
         author: "Umberto Eco",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 38000,
         format: "Físico",
@@ -167,7 +167,7 @@ let libros = [
     {
         title: "La Sombra del Cisne",
         author: "Manuel Mujica Lainez",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 30000,
         format: "Físico",
@@ -182,7 +182,7 @@ let libros = [
     {
         title: "El Amante de Lady Chatterley",
         author: "D.H. Lawrence",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 26000,
         format: "Físico",
@@ -197,7 +197,7 @@ let libros = [
     {
         title: "La Casa de la Pradera",
         author: "Laura Ingalls Wilder",
-        genre: "Literatura Infantil",
+        gender: "Literatura Infantil",
         language: "Español",
         price: 20000,
         format: "Físico",
@@ -212,7 +212,7 @@ let libros = [
     {
         title: "El Poder y la Gloria",
         author: "Graham Greene",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 24000,
         format: "Físico",
@@ -227,7 +227,7 @@ let libros = [
     {
         title: "Pedro Páramo",
         author: "Juan Rulfo",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 28000,
         format: "Físico",
@@ -242,7 +242,7 @@ let libros = [
     {
         title: "La Metamorfosis",
         author: "Franz Kafka",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 26000,
         format: "Físico",
@@ -257,7 +257,7 @@ let libros = [
     {
         title: "La Casa Grande",
         author: "Álvaro Mutis",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 22000,
         format: "Físico",
@@ -272,7 +272,7 @@ let libros = [
     {
         title: "Los Hermanos Detectives",
         author: "José Luis Peón",
-        genre: "Novela negra",
+        gender: "Novela negra",
         language: "Español",
         price: 25000,
         format: "Físico",
@@ -287,7 +287,7 @@ let libros = [
     {
         title: "El tiempo de las moscas",
         author: "María Fernanda Heredia",
-        genre: "Novela juvenil",
+        gender: "Novela juvenil",
         language: "Español",
         price: 16000,
         format: "Físico",
@@ -302,7 +302,7 @@ let libros = [
     {
         title: "La Ciudad De Las Bestias",
         author: "Isabel Allende",
-        genre: "Novela juvenil",
+        gender: "Novela juvenil",
         language: "Español",
         price: 20000,
         format: "Físico",
@@ -317,7 +317,7 @@ let libros = [
     {
         title: "La biblioteca de los sueños olvidados",
         author: "Carlos Ruiz Zafón",
-        genre: "Novela juvenil",
+        gender: "Novela juvenil",
         language: "Español",
         price: 30000,
         format: "Físico",
@@ -349,23 +349,27 @@ function createBook(book) {
 
     const title = document.createElement('h2')
     title.textContent = book.title
+    title.classList.add("title-book")
 
     const author = document.createElement('p')
     author.textContent = book.author
+    author.classList.add("paragraph-author")
     
-    const genre = document.createElement('p')
-    genre.textContent = book.genre
+    const gender = document.createElement('p')
+    gender.textContent = book.gender
+    gender.classList.add("paragraph-gender")
 
     const description = document.createElement('p')
     description.textContent = book.description
 
     myBook.appendChild(title)
     myBook.appendChild(author)
-    myBook.appendChild(genre)
+    myBook.appendChild(gender)
     myBook.appendChild(description)
     
 
     body.appendChild(myBook)
-
+   
 }
 
+export {libros};
