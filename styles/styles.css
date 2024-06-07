@@ -27,11 +27,11 @@ hr{
 .contenedor2{
     margin-top: 250px;
 }
-/*.alquimista{
-    width: 12px;
-    height: 12px;
+.alquimista{
+    width: 325px;
+    height: 400px;
     
-}*/
+}
 .slick-track {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -55,3 +55,4 @@ hr{
     margin-left: auto;
     margin-right: auto;
 }
+
