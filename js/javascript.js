@@ -335,6 +335,33 @@ let libros = [
 ];
 
 const body = document.getElementById('body')
+const newBook = document.getElementById('btn-add-book')
+const data1 = document.getElementById('data1')
+const data2 = document.getElementById('data2')
+const data3 = document.getElementById('data3')
+const add = document.getElementById('btn-add').addEventListener('click', () => {
+    document.getElementById('modal').style.display = 'flex'
+})
+
+newBook.addEventListener('click', () => {
+    const book = {
+        title: data1.value,
+        author: data2.value,
+        genre: data1.value,
+        language: "Español",
+        price: 25000,
+        format: "Físico",
+        isbn: "978-84-7967-664-4",
+        description: "Una historia de autoconocimiento y búsqueda de la felicidad.",
+        condition: "Nuevo",
+        location: "Librería Nacional",
+        publicationDate: "1988",
+        publisher: "Planeta",
+        pages: 208
+    }
+    libros.push(book)
+    console.log(libros)
+})
 
 listBooks(libros)
 function listBooks(books) {
