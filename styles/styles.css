@@ -16,10 +16,9 @@ body {
 
 .book {
     
-    list-style: circle;
     line-height: 25px;
     width: 19rem;
-    height: 19rem;
+    height: 21rem;
     padding: 1rem;
     border-radius: 10px;
     border: double 2px #3f3d3d;

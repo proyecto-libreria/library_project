@@ -351,35 +351,35 @@ function createBook(book) {
     title.textContent = book.title
     title.classList.add("title-book")
 
-    const author = document.createElement('li')
+    const author = document.createElement('p')
     author.textContent = book.author
     author.classList.add("list-author")
     
-    const gender = document.createElement('li')
+    const gender = document.createElement('p')
     gender.textContent = book.gender
     gender.classList.add("list-gender")
 
-    const description = document.createElement('li')
+    const description = document.createElement('p')
     description.textContent = book.description
     description.classList.add('list-description')
 
-    const condition = document.createElement('li')
+    const condition = document.createElement('p')
     condition.textContent = book.condition
     condition.classList.add('list-condition')
 
-    const location = document.createElement('li')
+    const location = document.createElement('p')
     location.textContent = book.location
     location.classList.add('list-location')
 
-    const publicationDate = document.createElement('li')
+    const publicationDate = document.createElement('p')
     publicationDate.textContent = book.publicationDate
     publicationDate.classList.add('list-publicationDate')
 
-    const publisher = document.createElement('li')
+    const publisher = document.createElement('p')
     publisher.textContent = book.publisher
     publisher.classList.add('list-publisher')
 
-    const pages = document.createElement('li')
+    const pages = document.createElement('p')
     pages.textContent = book.pages
     pages.classList.add("list-pages")
 
