@@ -12,11 +12,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
-#arriba {
-    color: #ffffff;
+.libreria-sena{
+    margin-top: 0px;
+    width: 100%;
 }
 
 .breadcrumb-title{
@@ -28,16 +29,32 @@ header{
     padding: 0px 120px;
 }
 
+
+
+#arriba {
+    color: #ffffff;
+}
+
+
+
 #textocolor{
     color:lime;
     padding: 0px 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.text-header{
+    width: 100%;
+    
+}
 
 .tituloEncavesado{
+    display: flex;
+    margin-top: 260px ;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 .subtituloEncavesado{
