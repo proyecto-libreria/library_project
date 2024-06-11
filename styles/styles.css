@@ -6,6 +6,8 @@
 }
 
 body {
+    margin-top: 40px;
+    margin-bottom: 100px;
     width: 200vh;
     height: 200vh;
     display: flex;
@@ -16,6 +18,7 @@ body {
 
 .book {
     
+
     line-height: 25px;
     width: 19rem;
     height: 21rem;
