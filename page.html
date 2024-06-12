@@ -51,7 +51,7 @@
 
         <section class="section2">
             <div class="containerSec2">
-                <div id="location">
+                <div id="addressLibrary">
                     <img src="./images/localidad.JPG" id="medium"><br>
                     <h2>¿En donde nos ubicamos?</h2><br>
                     <p>Nos encontramos en el SENA Centro de comercio y turismo, Cra. 18 #7-58, Armenia, Quindío</p>
@@ -88,10 +88,20 @@
 
         <div id="modal" class="modal">
             <h2>Ingrese los datos del nuevo libro</h2>
-            <input id="data1" type="text">
-            <input id="data2" type="text">
-            <input id="data3" type="number">
-            <button id="btn-add-book">Enviar</button>
+            <input class="inputsModal" id="title" type="text" placeholder="Ingrese El Titulo Del Libro">
+            <input class="inputsModal" id="author" type="text"  placeholder="Ingrese El Nombre Del autor">
+            <input class="inputsModal" id="gender" type="text" placeholder="Ingrese El Genero Del Libro">
+            <input class="inputsModal" id="language" type="text" placeholder="Ingrese El Idioma En El Que Se Encuentra El Libro">
+            <input class="inputsModal" id="price" type="text" placeholder="Ingrese El Precio Sugerido Para El Libro">
+            <input class="inputsModal" id="format" type="text" placeholder="Ingrese El Fomato Del libro">
+            <input class="inputsModal" id="isbn" type="text" placeholder="Ingrese El Codigo ISBN Del Libro">
+            <input class="inputsModal" id="description" type="text" placeholder="Ingrese Una Breve Descripcion De El Libro">
+            <input class="inputsModal" id="condition" type="text" placeholder="Ingrese La Condicion En La Que Se Encuentra El Libro">
+            <input class="inputsModal" id="address" type="text" placeholder="Ingrese La Ubiacion De Donde Se Vendera El Libro Fisico">
+            <input class="inputsModal" id="publicationDate" type="text" placeholder="Ingrese La Fecha De Publicacion Del Libro">
+            <input class="inputsModal" id="publisher" type="text" placeholder="Ingrese La Editorial Del Libro">
+            <input class="inputsModal" id="pages" type="text" placeholder="Ingrese La Cantidad De Paginas Del Libro">
+            <button  id="btn-add-book">Enviar</button>
         </div>
 
     </main>

@@ -2,14 +2,14 @@ let libros = [
     {
         title: "El Alquimista",
         author: "Paulo Coelho",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 25000,
         format: "Físico",
         isbn: "978-84-7967-664-4",
         description: "Una historia de autoconocimiento y búsqueda de la felicidad.",
         condition: "Nuevo",
-        location: "Librería Nacional",
+        address: "Librería Nacional",
         publicationDate: "1988",
         publisher: "Planeta",
         pages: 208
@@ -17,14 +17,14 @@ let libros = [
     {
         title: "Cien años de soledad",
         author: "Gabriel García Márquez",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 30000,
         format: "Físico",
         isbn: "978-84-204-1143-9",
         description: "La historia de la familia Buendía en el pueblo de Macondo.",
         condition: "Usado",
-        location: "Librería El Mundo",
+        address: "Librería El Mundo",
         publicationDate: "1967",
         publisher: "Sudamericana",
         pages: 416
@@ -32,14 +32,14 @@ let libros = [
     {
         title: "El Señor de los Anillos",
         author: "J.R.R. Tolkien",
-        genre: "Fantasía",
+        gender: "Fantasía",
         language: "Español",
         price: 40000,
         format: "Físico",
         isbn: "978-84-9759-651-1",
         description: "La historia de la búsqueda del Anillo Único en la Tierra Media.",
         condition: "Nuevo",
-        location: "Librería Fantástica",
+        address: "Librería Fantástica",
         publicationDate: "1954",
         publisher: "Minotauro",
         pages: 1152
@@ -47,14 +47,14 @@ let libros = [
     {
         title: "La Sombra del Viento",
         author: "Carlos Ruiz Zafón",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 28000,
         format: "Físico",
         isbn: "978-84-9759-370-1",
         description: "La historia de un joven que descubre un libro misterioso en la Biblioteca del Cementerio de los Libros Olvidados.",
         condition: "Nuevo",
-        location: "Librería Nacional",
+        address: "Librería Nacional",
         publicationDate: "2001",
         publisher: "Planeta",
         pages: 416
@@ -62,14 +62,14 @@ let libros = [
     {
         title: "El Principito",
         author: "Antoine de Saint-Exupéry",
-        genre: "Ficción",
+        gender: "Ficción",
         language: "Español",
         price: 18000,
         format: "Físico",
         isbn: "978-84-204-1144-6",
         description: "La historia de un joven príncipe que viaja por el espacio y descubre la importancia de la amistad.",
         condition: "Usado",
-        location: "Librería El Mundo",
+        address: "Librería El Mundo",
         publicationDate: "1943",
         publisher: "Sudamericana",
         pages: 96
@@ -77,14 +77,14 @@ let libros = [
     {
         title: "1984",
         author: "George Orwell",
-        genre: "Dystopia",
+        gender: "Dystopia",
         language: "Español",
         price: 22000,
         format: "Físico",
         isbn: "978-84-9759-652-5",
         description: "La historia de un futuro distópico en el que el gobierno controla todos los aspectos de la vida.",
         condition: "Nuevo",
-        location: "Librería Fantástica",
+        address: "Librería Fantástica",
         publicationDate: "1949",
         publisher: "Minotauro",
         pages: 320
@@ -92,14 +92,14 @@ let libros = [
     {
         title: "El Amor en los Tiempos del Cólera",
         author: "Gabriel García Márquez",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 35000,
         format: "Físico",
         isbn: "978-84-204-1145-3",
         description: "La historia de un amor que dura toda una vida.",
         condition: "Nuevo",
-        location: "Librería Nacional",
+        address: "Librería Nacional",
         publicationDate: "1985",
         publisher: "Sudamericana",
         pages: 544
@@ -107,14 +107,14 @@ let libros = [
     {
         title: "La Casa de los Espíritus",
         author: "Isabel Allende",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 32000,
         format: "Físico",
         isbn: "978-84-9759-371-3",
         description: "La historia de tres generaciones de una familia chilena.",
         condition: "Nuevo",
-        location: "Librería Fantástica",
+        address: "Librería Fantástica",
         publicationDate: "1982",
         publisher: "Planeta",
         pages: 448
@@ -122,14 +122,14 @@ let libros = [
     {
         title: "El Aleph",
         author: "Jorge Luis Borges",
-        genre: "Cuentos",
+        gender: "Cuentos",
         language: "Español",
         price: 25000,
         format: "Físico",
         isbn: "978-84-204-1146-0",
         description: "Un conjunto de cuentos que exploran la filosofía y la literatura.",
         condition: "Usado",
-        location: "Librería El Mundo",
+        address: "Librería El Mundo",
         publicationDate: "1949",
         publisher: "Sudamericana",
         pages: 224
@@ -137,14 +137,14 @@ let libros = [
     {
         title: "La Ciudad y los Perros",
         author: "Mario Vargas Llosa",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 28000,
         format: "Físico",
         isbn: "978-84-9759-372-0",
         description: "La historia de un grupo de jóvenes en un colegio militar en Perú.",
         condition: "Nuevo",
-        location: "Librería Nacional",
+        address: "Librería Nacional",
         publicationDate: "1963",
         publisher: "Planeta",
         pages: 416
@@ -152,14 +152,14 @@ let libros = [
     {
         title: "El Nombre de la Rosa",
         author: "Umberto Eco",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 38000,
         format: "Físico",
         isbn: "978-84-9759-373-7",
         description: "La historia de un monje que investiga una serie de asesinatos en un monasterio medieval.",
         condition: "Nuevo",
-        location: "Librería Fantástica",
+        address: "Librería Fantástica",
         publicationDate: "1980",
         publisher: "Minotauro",
         pages: 592
@@ -167,14 +167,14 @@ let libros = [
     {
         title: "La Sombra del Cisne",
         author: "Manuel Mujica Lainez",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 30000,
         format: "Físico",
         isbn: "978-84-204-1147-7",
         description: "La historia de un joven que descubre un misterioso cisne en un lago.",
         condition: "Usado",
-        location: "Librería El Mundo",
+        address: "Librería El Mundo",
         publicationDate: "1992",
         publisher: "Sudamericana",
         pages: 272
@@ -182,14 +182,14 @@ let libros = [
     {
         title: "El Amante de Lady Chatterley",
         author: "D.H. Lawrence",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 26000,
         format: "Físico",
         isbn: "978-84-9759-374-4",
         description: "La historia de un amor prohibido entre una mujer casada y su guardaespaldas.",
         condition: "Nuevo",
-        location: "Librería Nacional",
+        address: "Librería Nacional",
         publicationDate: "1928",
         publisher: "Planeta",
         pages: 336
@@ -197,14 +197,14 @@ let libros = [
     {
         title: "La Casa de la Pradera",
         author: "Laura Ingalls Wilder",
-        genre: "Literatura Infantil",
+        gender: "Literatura Infantil",
         language: "Español",
         price: 20000,
         format: "Físico",
         isbn: "978-84-204-1148-4",
         description: "La historia de una familia que se muda a una granja en el oeste de conditions Unidos.",
         condition: "Nuevo",
-        location: "Librería Fantástica",
+        address: "Librería Fantástica",
         publicationDate: "1935",
         publisher: "Sudamericana",
         pages: 272
@@ -212,14 +212,14 @@ let libros = [
     {
         title: "El Poder y la Gloria",
         author: "Graham Greene",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 24000,
         format: "Físico",
         isbn: "978-84-9759-375-1",
         description: "La historia de un sacerdote que se enfrenta a la persecución en México",
         condition: "Usado",
-        location: "Librería El Mundo",
+        address: "Librería El Mundo",
         publicationDate: "1940",
         publisher: "Minotauro",
         pages: 272
@@ -227,14 +227,14 @@ let libros = [
     {
         title: "Pedro Páramo",
         author: "Juan Rulfo",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 28000,
         format: "Físico",
         isbn: "978-84-9759-379-9",
         description: "La búsqueda de un hijo por su padre, ambientada en un pueblo fantasmal de México.",
         condition: "Nuevo",
-        ubicacion: "Librería Fantástica",
+        address: "Librería Fantástica",
         publicationDate: "1955",
         publisher: "Minotauro",
         pages: 124
@@ -242,14 +242,14 @@ let libros = [
     {
         title: "La Metamorfosis",
         author: "Franz Kafka",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 26000,
         format: "Físico",
         isbn: "978-84-9759-378-2",
         description: "La historia de Gregorio Samsa, quien se despierta un día transformado en un insecto.",
         condition: "Nuevo",
-        ubicacion: "Librería Nacional",
+        address: "Librería Nacional",
         publicationDate: "1915",
         publisher: "Planeta",
         pages: 224
@@ -257,14 +257,14 @@ let libros = [
     {
         title: "La Casa Grande",
         author: "Álvaro Mutis",
-        genre: "Novela",
+        gender: "Novela",
         language: "Español",
         price: 22000,
         format: "Físico",
         isbn: "978-84-235-0349-8",
         description: "Una novela semi-autobiográfica que narra la historia de un hombre que busca su lugar en el mundo.",
         condition: "Nuevo",
-        ubicacion: "Librería Nacional",
+        address: "Librería Nacional",
         publicationDate: "1954",
         publisher: "Alfaguara",
         pages: 272
@@ -272,14 +272,14 @@ let libros = [
     {
         title: "Los Hermanos Detectives",
         author: "José Luis Peón",
-        genre: "Novela negra",
+        gender: "Novela negra",
         language: "Español",
         price: 25000,
         format: "Físico",
         isbn: "978-958-748-073-2",
         description: " Una novela que sigue la investigación de dos detectives en la Ciudad de México.",
         condition: "Nuevo",
-        ubicacion: " Librería Universitaria",
+        address: " Librería Universitaria",
         publicationDate: "2017",
         publisher: "Planeta",
         pages: 288
@@ -287,14 +287,14 @@ let libros = [
     {
         title: "El tiempo de las moscas",
         author: "María Fernanda Heredia",
-        genre: "Novela juvenil",
+        gender: "Novela juvenil",
         language: "Español",
         price: 16000,
         format: "Físico",
         isbn: "978-958-42-3809-1",
         description: "Una novela que narra la historia de una adolescente que busca su identidad en un mundo en crisis.",
         condition: "Nuevo",
-        ubicacion: " Librería Kalma",
+        address: " Librería Kalma",
         publicationDate: "2005",
         publisher: "Norma",
         pages: 208
@@ -302,14 +302,14 @@ let libros = [
     {
         title: "La Ciudad De Las Bestias",
         author: "Isabel Allende",
-        genre: "Novela juvenil",
+        gender: "Novela juvenil",
         language: "Español",
         price: 20000,
         format: "Físico",
         isbn: "978-84-663-3279-5",
         description: "Una novela de aventuras que sigue a dos niños que viajan a la selva amazónica.",
         condition: "Nuevo",
-        ubicacion: " Librería Gato Gris",
+        address: " Librería Gato Gris",
         publicationDate: "2002",
         publisher: "Alfaguara",
         pages: 384
@@ -317,14 +317,14 @@ let libros = [
     {
         title: "La biblioteca de los sueños olvidados",
         author: "Carlos Ruiz Zafón",
-        genre: "Novela juvenil",
+        gender: "Novela juvenil",
         language: "Español",
         price: 30000,
         format: "Físico",
         isbn: "978-84-663-3545-9",
         description: "Una novela de aventuras que sigue a dos niños que viajan a la selva amazónica.",
         condition: "Nuevo",
-        ubicacion: " Librería Gato Gris",
+        address: " Librería Gato Gris",
         publicationDate: "2005",
         publisher: "Planeta",
         pages: 544
@@ -336,28 +336,38 @@ let libros = [
 
 const body = document.getElementById('body')
 const newBook = document.getElementById('btn-add-book')
-const data1 = document.getElementById('data1')
-const data2 = document.getElementById('data2')
-const data3 = document.getElementById('data3')
+const title = document.getElementById('title')
+const author = document.getElementById('author')
+const gender = document.getElementById('gender') 
+const language = document.getElementById('language') 
+const price = document.getElementById('price') 
+const format = document.getElementById('format') 
+const isbn = document.getElementById('isbn') 
+const description = document.getElementById('description') 
+const condition = document.getElementById('condition') 
+const address = document.getElementById('address') 
+const publicationDate = document.getElementById('publicationDate') 
+const publisher = document.getElementById('publisher') 
+const pages = document.getElementById('pages') 
 const add = document.getElementById('btn-add').addEventListener('click', () => {
     document.getElementById('modal').style.display = 'flex'
 })
 
 newBook.addEventListener('click', () => {
     const book = {
-        title: data1.value,
-        author: data2.value,
-        genre: data1.value,
-        language: "Español",
-        price: 25000,
-        format: "Físico",
-        isbn: "978-84-7967-664-4",
-        description: "Una historia de autoconocimiento y búsqueda de la felicidad.",
-        condition: "Nuevo",
-        location: "Librería Nacional",
-        publicationDate: "1988",
-        publisher: "Planeta",
-        pages: 208
+        title: title.value,
+        author: author.value,
+        gender: gender.value,
+        language: language.value,
+        price: price.value,
+        format: format.value,
+        isbn: isbn.value,
+        description: description.value,
+        condition: condition.value,
+        address: address.value,
+        publicationDate: publicationDate.value,
+        publisher: publisher.value,
+        pages: pages.value
     }
     libros.push(book)
     console.log(libros)
@@ -380,15 +390,15 @@ function createBook(book) {
     const author = document.createElement('p')
     author.textContent = book.author
     
-    const genre = document.createElement('p')
-    genre.textContent = book.genre
+    const gender = document.createElement('p')
+    gender.textContent = book.gender
 
     const description = document.createElement('p')
     description.textContent = book.description
 
     myBook.appendChild(title)
     myBook.appendChild(author)
-    myBook.appendChild(genre)
+    myBook.appendChild(gender)
     myBook.appendChild(description)
     
 
