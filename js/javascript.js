@@ -135,6 +135,7 @@ let libros = [
         pages: 224
     },
     {
+
         title: "La Ciudad y los Perros",
         author: "Mario Vargas Llosa",
         gender: "Novela",
@@ -351,6 +352,10 @@ const publisher = document.getElementById('publisher')
 const pages = document.getElementById('pages') 
 const add = document.getElementById('btn-add').addEventListener('click', () => {
     document.getElementById('modal').style.display = 'flex'
+
+})
+const close = document.getElementById('btn-close').addEventListener('click', () => {
+    document.getElementById('modal').style.display = 'none'
 })
 
 newBook.addEventListener('click', () => {
@@ -403,6 +408,29 @@ function createBook(book) {
     
 
     body.appendChild(myBook)
+
+}
+
+
+function createCard() {
+
+    listBooks(libros)
+    books.forEach(myBook => {
+        createCard(myBook)
+    });
+
+    const card = document.createElement('div')
+    card.classList.add('cuadro1')
+
+    const titleCard = document.createElement('h2')
+    titleCard.textContent = book.title
+    titleCard.classList.add('title-card')
+
+    const descriptionCard = document.createElement('p')
+    descriptionCard.textContent = book.description
+    descriptionCard.classList.add('description-card')
+
+
 
 }
 
