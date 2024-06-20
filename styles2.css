@@ -8,12 +8,13 @@
 header {
     height: 60vh;
     width: 100%;
-    background-image: url(../images/header.jpg);
+    background-image: url(./header.jpg);
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 nav {
@@ -74,10 +75,11 @@ li {
 }
 
 .tituloEncabezado {
+    height: 70px;
     display: flex;
     margin-top: 180px;
     font-size: 50px;
-
+    background-color: #2625258f;
     color: white;
     justify-content: center;
     align-items: center;
@@ -88,7 +90,8 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    background-color: #2625258f;
+    height: 50px;
     color: rgb(255, 255, 255);
     padding: 40px 500px;
 }
@@ -391,5 +394,3 @@ footer {
     font-size: 18px;
     padding: 10px 100px;
 }
-
-
