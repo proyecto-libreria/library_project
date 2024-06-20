@@ -28,6 +28,9 @@ function makeCard(book) {
   let titleBook = document.createElement('h2')
   titleBook.textContent = book.title
 
+
+
+
   let priceBook = document.createElement('h3')
   priceBook.textContent = `${book.price}$`
 
