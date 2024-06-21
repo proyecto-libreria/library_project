@@ -2,9 +2,12 @@ import { books } from './books.js'
 
 const containerBooks = document.getElementById('container-cards')
 const filterGender = document.getElementById('select-gender').addEventListener('change', filterToGender)
+const filterLanguages = document.getElementById('select-language').addEventListener('change', filterToLanguage)
+
 const btnSort = document.getElementById('btnSort').addEventListener('click', sortedBooks)
 const filterPages = document.getElementById('btn-pages').addEventListener('click', bookspages)
 const filterPrice =  document.getElementById('btn-prices').addEventListener('click', filterToPrices)
+const showExpensiveBooks = document.getElementById('btn-expensiveBooks').addEventListener('click', expensiveBooks)
 
 
 window.addEventListener('DOMContentLoaded', generateCard)
@@ -64,6 +67,78 @@ function filterToGender (event) {
       }
     })
   }  
+
+  function makeCard(book) {
+    // Crear elementos de la card
+    let bookCard = document.createElement('div')
+    bookCard.classList.add('book')
+  
+    let bookPhoto = document.createElement('div')
+    bookPhoto.classList.add('book-photo')
+  
+    let imgBook = document.createElement('img')
+    imgBook.src = book.image
+    imgBook.alt = book.title
+  
+    let descriptionBook = document.createElement('div')
+    descriptionBook.classList.add('book-description')
+  
+    let titleBook = document.createElement('h2')
+    titleBook.textContent = book.title
+  
+    let author =  document.createElement('h3')
+    author.textContent = book.author
+
+    let priceBook = document.createElement('h3')
+    priceBook.textContent = `${book.price}COP`
+  
+    let btnBuy = document.createElement('button')
+    btnBuy.textContent = 'Comprar'
+  
+    bookPhoto.appendChild(imgBook)
+    
+    descriptionBook.appendChild(titleBook)
+    descriptionBook.appendChild(author)
+    descriptionBook.appendChild(priceBook)
+    descriptionBook.appendChild(btnBuy)
+    
+    
+    bookCard.appendChild(bookPhoto)
+    bookCard.appendChild(descriptionBook)
+  
+    containerBooks.appendChild(bookCard)
+    return bookCard;
+  }
+
+  
+
+
+
+}
+
+function filterToLanguage (event) {     
+  containerBooks.innerHTML = ''
+  if (event.target.value === 'everything') {
+    generateCard()    
+  } else {
+    books.forEach( book => {
+      if (book.language === event.target.value ) {
+        makeCard(book)
+      }
+    })
+  } 
+}
+
+function expensiveBooks() {
+  containerBooks.innerHTML = ''
+
+  const expensiveBooks = books.sort((a, b) => b.price - a.price).slice(0, 5)
+
+  expensiveBooks.forEach(book => {
+    makeCard(book)
+  })
+
+  return books;
 }
 
 function filterToPrices() {
@@ -74,6 +149,49 @@ function filterToPrices() {
       makeCard(book)
     }
   })
+
+  function makeCard(book) {
+    // Crear elementos de la card
+    let bookCard = document.createElement('div')
+    bookCard.classList.add('book')
+  
+    let bookPhoto = document.createElement('div')
+    bookPhoto.classList.add('book-photo')
+  
+    let imgBook = document.createElement('img')
+    imgBook.src = book.image
+    imgBook.alt = book.title
+  
+    let descriptionBook = document.createElement('div')
+    descriptionBook.classList.add('book-description')
+  
+    let titleBook = document.createElement('h2')
+    titleBook.textContent = book.title
+  
+    let author =  document.createElement('h3')
+    author.textContent = book.author
+
+    let priceBook = document.createElement('h3')
+    priceBook.textContent = `${book.price}COP`
+  
+    let btnBuy = document.createElement('button')
+    btnBuy.textContent = 'Comprar'
+  
+    bookPhoto.appendChild(imgBook)
+    
+    descriptionBook.appendChild(titleBook)
+    descriptionBook.appendChild(author)
+    descriptionBook.appendChild(priceBook)
+    descriptionBook.appendChild(btnBuy)
+    
+    
+    bookCard.appendChild(bookPhoto)
+    bookCard.appendChild(descriptionBook)
+  
+    containerBooks.appendChild(bookCard)
+    return bookCard;
+  }
+
 }
 
 function bookspages() {
@@ -85,6 +203,48 @@ function bookspages() {
       makeCard(book)
     }
   })
+  function makeCard(book) {
+    // Crear elementos de la card
+    let bookCard = document.createElement('div')
+    bookCard.classList.add('book')
+  
+    let bookPhoto = document.createElement('div')
+    bookPhoto.classList.add('book-photo')
+  
+    let imgBook = document.createElement('img')
+    imgBook.src = book.image
+    imgBook.alt = book.title
+  
+    let descriptionBook = document.createElement('div')
+    descriptionBook.classList.add('book-description')
+  
+    let titleBook = document.createElement('h2')
+    titleBook.textContent = book.title
+  
+    let author =  document.createElement('h3')
+    author.textContent = book.author
+
+    let priceBook = document.createElement('h3')
+    priceBook.textContent = `${book.price}COP`
+  
+    let btnBuy = document.createElement('button')
+    btnBuy.textContent = 'Comprar'
+  
+    bookPhoto.appendChild(imgBook)
+    
+    descriptionBook.appendChild(titleBook)
+    descriptionBook.appendChild(author)
+    descriptionBook.appendChild(priceBook)
+    descriptionBook.appendChild(btnBuy)
+    
+    
+    bookCard.appendChild(bookPhoto)
+    bookCard.appendChild(descriptionBook)
+  
+    containerBooks.appendChild(bookCard)
+    return bookCard;
+  }
+
 }
 
 
