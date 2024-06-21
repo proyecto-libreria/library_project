@@ -3,6 +3,9 @@ import { books } from './books.js'
 const containerBooks = document.getElementById('container-cards')
 const filterGender = document.getElementById('select-gender').addEventListener('change', filterToGender)
 const btnSort = document.getElementById('btnSort').addEventListener('click', sortedBooks)
+const filterPages = document.getElementById('btn-pages').addEventListener('click', bookspages)
+const filterPrice =  document.getElementById('btn-prices').addEventListener('click', filterToPrices)
+
 
 window.addEventListener('DOMContentLoaded', generateCard)
 
@@ -32,7 +35,7 @@ function makeCard(book) {
 
 
   let priceBook = document.createElement('h3')
-  priceBook.textContent = `${book.price}$`
+  priceBook.textContent = `${book.price}COP`
 
   let btnBuy = document.createElement('button')
   btnBuy.textContent = 'Comprar'
@@ -62,6 +65,29 @@ function filterToGender (event) {
     })
   }  
 }
+
+function filterToPrices() {
+  containerBooks.innerHTML = ''
+
+  books.forEach( book => {
+    if (book.price >= 30000 && book.price <= 80000 ) {
+      makeCard(book)
+    }
+  })
+}
+
+function bookspages() {
+
+  containerBooks.innerHTML = ''
+
+  books.forEach( book => {
+    if (book.pages >= 200 ) {
+      makeCard(book)
+    }
+  })
+}
+
+
 
 function sortedBooks() {
   containerBooks.innerHTML = ''
