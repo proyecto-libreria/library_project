@@ -7,7 +7,7 @@ export const books = [
     price: 20000,
     availability: true,
     state: "Nuevo",
-    editorial: "editorial Salamandra",
+    editorial: "Editorial-Salamandra",
     pages: 100,
     description: "Un piloto perdido en el desierto encuentra a un pequeño príncipe que lo guía en un viaje lleno de sabiduría y descubrimiento.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675595/principito_ly0n3v.jpg'
@@ -20,7 +20,7 @@ export const books = [
     price: 42000,
     availability: false,
     state: "Usado",
-    editorial: "Tusquets Editores",
+    editorial: "Tusquets-Editores",
     pages: 296,
     description: "Una historia de amor y pérdida que sigue a un estudiante universitario en Tokio mientras navega por la soledad y la angustia.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675596/tokio_wp3tsh.jpg'
@@ -46,7 +46,7 @@ export const books = [
     price: 40000,
     availability: true,
     state: "Nuevo",
-    editorial: "editorial Losada",
+    editorial: "Editorial-Losada",
     pages: 160,
     description: "Gregor Samsa se despierta una mañana convertido en un insecto, enfrentando el rechazo de su familia y la transformación de su vida.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675580/metamorfosis_kw7qbs.jpg'
@@ -59,7 +59,7 @@ export const books = [
     price: 50000,
     availability: true,
     state: "Nuevo",
-    editorial: "editorial Cátedra",
+    editorial: "Editorial-Cátedra",
     pages: 1024,
     description: "Las aventuras de un caballero soñador y su fiel escudero, Sancho Panza, que luchan contra molinos de viento y buscan justicia en un mundo de fantasía.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675596/quijote_horlp2.jpg'
@@ -72,7 +72,7 @@ export const books = [
     price: 15000,
     availability: false,
     state: "Nuevo",
-    editorial: "editorial Planeta",
+    editorial: "Editorial-Planeta",
     pages: 376,
     description: "Una novela que explora los aspectos más oscuros de la mente humana a través de las perspectivas de un asesino en serie y un sacerdote atormentado.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675596/satanas_moq1rv.jpg'
@@ -98,7 +98,7 @@ export const books = [
     price: 29900,
     availability: true,
     state: "Usado",
-    editorial: "Alianza editorial",
+    editorial: "Alianza-Editorial",
     pages: 576,
     description: "La célebre epopeya griega que narra los acontecimientos finales de la Guerra de Troya, con sus héroes, dioses y la ira de Aquiles.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675580/iliada_ao3m77.jpg'
@@ -111,7 +111,7 @@ export const books = [
     price: 40000,
     availability: true,
     state: "Usado",
-    editorial: "Seix Barral",
+    editorial: "Seix-Barral",
     pages: 288,
     description: "La historia de Jean-Baptiste Grenouille, un hombre sin olor propio pero con un olfato excepcional, que busca crear el perfume perfecto a través de la explotación de otras personas.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675595/perfume_peiqo8.jpg'
@@ -124,7 +124,7 @@ export const books = [
     price: 70000,
     availability: false,
     state: "Nuevo",
-    editorial: "Diana Edit",
+    editorial: "Diana-Edit",
     pages: 471,
     description: "La saga de la familia Buendía a lo largo de varias generaciones en Macondo, una obra maestra de realismo mágico que explora temas de amor, soledad y destino.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675580/cien_q4hnkm.jpg'
@@ -137,7 +137,7 @@ export const books = [
     price: 20000,
     availability: false,
     state: "Nuevo",
-    editorial: "Alianza editorial",
+    editorial: "Alianza-Editorial",
     pages: 384,
     description: "El viaje de Ulises de regreso a casa después de la Guerra de Troya, enfrentando peligros, desafíos y la ira de los dioses en su búsqueda de su amada Penélope.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675581/odisea_n6pfld.jpg'
@@ -150,7 +150,7 @@ export const books = [
     price: 40000,
     availability: false,
     state: "Usado",
-    editorial: "editorial Diana",
+    editorial: "Diana-Edit",
     pages: 144,
     description: "La crónica real del naufragio del marinero colombiano Luis Alejandro Velasco, su lucha por sobrevivir y su milagroso rescate.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675580/naufrago_jnsb4o.jpg'
@@ -189,7 +189,7 @@ export const books = [
     price: 40000,
     availability: true,
     state: "Usado",
-    editorial: "Little, Brown and Company",
+    editorial: "Little,Brown-And-Company",
     pages: 544,
     description: "Una adolescente se enamora de un vampiro, desatando una serie de eventos que desafían la naturaleza y la realidad, en esta saga de romance paranormal.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675580/crepusculo_pzt88l.jpg'
@@ -202,7 +202,7 @@ export const books = [
     price: 35000,
     availability: true,
     state: "Nuevo",
-    editorial: "Fondo de Cultura Económica",
+    editorial: "Fondo-De-Cultura-Económica",
     pages: 352,
     description: "El testimonio de una joven judía durante la Segunda Guerra Mundial, que narra su vida en un escondite en Ámsterdam y sus pensamientos más íntimos.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675580/anafrank_ceayat.jpg'
@@ -215,7 +215,7 @@ export const books = [
     price: 20000,
     availability: true,
     state: "Usado",
-    editorial: "Amber-Allen Publishing",
+    editorial: "Amber-Allen-Publishing",
     pages: 160,
     description: "Un libro de sabiduría tolteca que ofrece un camino hacia la libertad personal y la felicidad, basado en cuatro acuerdos simples pero poderosos.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675580/4ac_aiboic.jpg'
@@ -241,7 +241,7 @@ export const books = [
     price: 20000,
     availability: true,
     state: "Usado",
-    editorial: "Seix Barral",
+    editorial: "Seix-Barral",
     pages: 160,
     description: "Un hombre asesina a su esposa y relata su obsesión por una mujer que lo lleva por un camino de autodescubrimiento y desesperación en este clásico argentino.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675596/tunel_stuwg6.jpg'
@@ -254,7 +254,7 @@ export const books = [
     price: 35000,
     availability: true,
     state: "Nuevo",
-    editorial: "Umbriel Editores",
+    editorial: "Umbriel-Editores",
     pages: 576,
     description: "El profesor de simbología Robert Langdon se enfrenta a una conspiración en el Vaticano mientras busca detener un ataque que amenaza con desatar el caos.",
     image: 'https://res.cloudinary.com/erpersonalprojects/image/upload/v1718675580/angeles_Demonios_qdfpct.jpg'

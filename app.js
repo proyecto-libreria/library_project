@@ -3,7 +3,7 @@ import { books } from './books.js'
 const containerBooks = document.getElementById('container-cards')
 const filterGender = document.getElementById('select-gender').addEventListener('change', filterToGender)
 const filterLanguages = document.getElementById('select-language').addEventListener('change', filterToLanguage)
-
+const filterPublisher = document.getElementById('select-editorial').addEventListener('change', filterToPublisher)
 const btnSort = document.getElementById('btnSort').addEventListener('click', sortedBooks)
 const filterPages = document.getElementById('btn-pages').addEventListener('click', bookspages)
 const filterPrice =  document.getElementById('btn-prices').addEventListener('click', filterToPrices)
@@ -123,6 +123,19 @@ function filterToLanguage (event) {
   } else {
     books.forEach( book => {
       if (book.language === event.target.value ) {
+        makeCard(book)
+      }
+    })
+  } 
+}
+
+function filterToPublisher (event) {     
+  containerBooks.innerHTML = ''
+  if (event.target.value === 'everything') {
+    generateCard()    
+  } else {
+    books.forEach( book => {
+      if (book.editorial === event.target.value ) {
         makeCard(book)
       }
     })
