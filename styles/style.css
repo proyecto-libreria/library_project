@@ -44,6 +44,9 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: aquamarine;
+  background: rgb(255,255,255);
+  background: linear-gradient(130deg, #ffffff 0%, #00ff84 120%);
 }
 
 .book {
@@ -86,6 +89,15 @@ main {
   font-size: 1.5rem;
   color: #5555cb;
   text-align: center;
+}
+
+.normalPrice{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.authorBook{
+  margin-bottom: 5px;
 }
 
 .book-description > h3 {
