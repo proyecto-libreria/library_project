@@ -54,6 +54,10 @@ function makeCard(book) {
   let btnBuy = document.createElement('button')
   btnBuy.textContent = 'Comprar'
 
+  btnBuy.addEventListener('click', function() {
+    window.location.href = 'login.html'; 
+  });
+
   bookPhoto.appendChild(imgBook)
   
   descriptionBook.appendChild(titleBook)

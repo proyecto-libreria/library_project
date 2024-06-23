@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: #30d0216b;
+}
+
+header {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 9rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #302929;
+    border-bottom: solid 4px lime;
+    height: 9vh;
+}
+
+.home{
+    color: #fff;
+    position: relative;
+    left: 80rem;
+}
+
+.libreria-sena {
+    margin-top: 0px;
+    width: 100%;
+}
+
+.breadcrumb-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 0px 120px;
+}
+
+
+#text-color {
+    color: lime;
+    padding: 0px 10px;
+
+}
+
+
+
+.box-login{
+    width: 300px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto ;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.text-title{
+    font-size: 30px;
+    text-align: center;
+}
+
+.inputs{
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .input-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    margin-right: 10px;
+  }
+  
+  .input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+  }
+
+.btn-buy2{
+    background-color: #30d0216b;
+    font-size: 20px;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
