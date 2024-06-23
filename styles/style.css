@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
@@ -28,11 +29,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.color{
-  width: 100%;
-  height: 9vh;
-  background-color: #302929;
-}
+  
 
 .container-filter {
   width: 100%;
@@ -51,7 +48,7 @@ main {
 
 .book {
   width: 25rem;
-  height: 14rem;
+  height: 20rem;
   border: double 5px gray;
   border-radius: 5px;  
   margin: 1rem;
@@ -60,8 +57,8 @@ main {
 }
 
 .book-photo {
-  width: 30%;
-  height: 100%;
+  width: 40%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,6 +82,7 @@ main {
 }
 
 .book-description > h2 {
+  margin-top: 10px;
   font-size: 1.5rem;
   color: #5555cb;
   text-align: center;
@@ -96,6 +94,16 @@ main {
   text-align: center;
 }
 
+.book-description > p{
+  font-size: 0.9rem;
+  margin-left: 0.8rem;
+  margin-bottom: 0.9rem;
+}
+
+.authorBook{
+  padding: 10px 0px 10px 0px;
+}
+
 .book-description > h4 {
   margin-top: 3rem;
   color: #5555cb;
@@ -104,6 +112,7 @@ main {
 
 .book-description > button {
   margin-top: 1rem;
+  margin-bottom: 2rem;
   width: 80%;
   font-size: 1.2rem;
   border-radius: 15px;
@@ -124,9 +133,4 @@ main {
   border-radius: 15px;
   border: double 5px #047b93;
 }
-
-
-
-
-
 

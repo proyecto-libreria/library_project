@@ -10,7 +10,10 @@ const filterPrice =  document.getElementById('btn-prices').addEventListener('cli
 const showExpensiveBooks = document.getElementById('btn-expensiveBooks').addEventListener('click', expensiveBooks)
 
 
+
 window.addEventListener('DOMContentLoaded', generateCard)
+
+
 
 function generateCard() {  
   books.forEach( book => makeCard(book) )
@@ -34,8 +37,16 @@ function makeCard(book) {
   let titleBook = document.createElement('h2')
   titleBook.textContent = book.title
 
+  let bookAuthor = document.createElement('h3')
+  bookAuthor.textContent = book.author
+  bookAuthor.classList.add('authorBook')
 
+  let bookDescription = document.createElement('p')
+  bookDescription.textContent = book.description
+  bookDescription.classList.add('description')
 
+  let pagesBook = document.createElement('h3')
+  pagesBook.textContent = `Paginas: ${book.pages}`
 
   let priceBook = document.createElement('h3')
   priceBook.textContent = `${book.price}COP`
@@ -46,6 +57,9 @@ function makeCard(book) {
   bookPhoto.appendChild(imgBook)
   
   descriptionBook.appendChild(titleBook)
+  descriptionBook.appendChild(bookAuthor)
+  descriptionBook.appendChild(bookDescription)
+  descriptionBook.appendChild(pagesBook)
   descriptionBook.appendChild(priceBook)
   descriptionBook.appendChild(btnBuy)
   

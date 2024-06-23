@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/styles2.css">
   <title>Books</title>
 </head>
 
@@ -15,17 +15,13 @@
       <div class="breadcrumb-title">
         <p id="text-color">Libreria Sena</p>
       </div>
-      <ul>
-        <li><a href="index.html" id="arriba">INICIO</a></li>
-        <li><a href="expensiveBooks.html" id="arriba">5 Libros Mas Caros</a></li>
-        <li><a href="" id="arriba">SERVICIOS</a></li>
-        <li><a href="" id="arriba">CONTACTO</a></li>
-      </ul>
+      
     </nav>
     <div class="text-header">
 
       <h1 class="tituloEncabezado">LIBRERÍA SENA </h1>
-
+      
+      
 
       <h3 class="subtituloEncabezado">La inteligencia consiste no sólo en el conocimiento, sino tambien en la
         destreza de aplicar los conocimientos en la practica.<br>
@@ -42,13 +38,13 @@
 
 
       <div class="container-filter">
-        <button id="btnSort">Ordenar de la A-Z</button>
-        <button id="btn-pages">+200 Paginas</button>
-        <button id="btn-prices">30.000 - 80.000</button>
-        <button id="btn-expensiveBooks">5 libros Mas Costosos</button>
-        <fieldset>
+        <button class="style-btn" id="btnSort">Ordenar de la A-Z</button>
+        <button class="style-btn" id="btn-pages">+200 Paginas</button>
+        <button class="style-btn" id="btn-prices">30.000 - 80.000</button>
+        <button class="style-btn" id="btn-expensiveBooks">5 libros Mas Costosos</button>
+        <fieldset class="opt">
           <label for="">Género</label>
-          <select name="" id="select-gender">
+          <select class="style-opt" name="" id="select-gender">
             <option value="everything">Todos</option>
             <option value="Ficción">Ficción</option>
             <option value="Novela">Novela</option>
@@ -58,7 +54,7 @@
             <option value="Autoayuda">autoayuda</option>
           </select>
         </fieldset>
-        <fieldset>
+        <fieldset class="opt">  
           <label for="">Editorial</label>
           <select name="" id="select-editorial">
             <option value="everything">Todos</option>
@@ -82,7 +78,7 @@
 
           </select>
         </fieldset>
-        <fieldset>
+        <fieldset class="opt" >
           <label for="">Idioma </label>
           <select name="" id="select-language">
             <option value="everything">Todos</option>
@@ -92,7 +88,7 @@
 
           </select>
         </fieldset>
-        <fieldset>
+        <fieldset class="opt">
           <label for="">Editorial </label>
           <select name="" id="select-language">
             <option value="everything">Todos</option>
@@ -101,7 +97,7 @@
             <option value="Español/Inglés">Español/Ingles</option>
           </select>
         </fieldset>
-        <fieldset>
+        <fieldset class="opt">
           <label for="">Disponibilidad</label>
           <select name="" id="">
             <option value="availible">Disponibilidad</option>
@@ -118,8 +114,8 @@
     </div>
   </main>
   <footer></footer>
-  <script type="module" src="books.js"></script>
-  <script type="module" src="app.js"></script>
+  <script type="module" src="./js/books.js"></script>
+  <script type="module" src="./js/app.js"></script>
 </body>
 
 </html>
