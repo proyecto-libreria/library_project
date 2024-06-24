@@ -33,6 +33,7 @@ function makeCard(book) {
 
   let descriptionBook = document.createElement('div')
   descriptionBook.classList.add('book-description')
+  
 
   let titleBook = document.createElement('h2')
   titleBook.textContent = book.title
@@ -72,7 +73,7 @@ function makeCard(book) {
 
   containerBooks.appendChild(bookCard)
   return bookCard;
-}
+} 
 
 function filterToGender (event) {     
   containerBooks.innerHTML = ''
@@ -213,7 +214,7 @@ function ReadersDay() {
       pagesBook.textContent = `Paginas: ${book.pages}`
 
       let normalPriceBook = document.createElement('h3')
-      normalPriceBook.textContent = `Precio normal: ${book.price}COP`
+      normalPriceBook.innerHTML = `Precio normal: <del>${book.price}</del>COP`;
       normalPriceBook.classList.add('normalPrice')
     
       let priceBook = document.createElement('h3')
