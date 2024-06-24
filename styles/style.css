@@ -50,8 +50,8 @@ main {
 }
 
 .book {
-  width: 25rem;
-  height: 20rem;
+  width: 28rem;
+  height: 27rem;
   border: double 5px gray;
   border-radius: 5px;  
   margin: 1rem;
@@ -59,8 +59,23 @@ main {
   align-items: center;
 }
 
+.input-edit{
+  margin-bottom: 15px;
+  background-color: #00ff8400;
+  border-radius: 5px;
+  
+}
+
+.btn-save{
+  width: 17px;
+  border-radius: 5px;
+  background-color: #00ff8471;  
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 .book-photo {
-  width: 40%;
+  width: 55%;
   height: 90%;
   display: flex;
   justify-content: center;
@@ -69,7 +84,7 @@ main {
 
 .book-photo > img {
   width: 80%;
-  height: 80%;
+  height: 60%;
   object-fit: cover;  
   box-shadow: -3px -3px 0 #34577ebc, 0 0 50px #022c5cbc;
 }
@@ -124,8 +139,8 @@ main {
 }
 
 .book-description > button {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
   width: 80%;
   font-size: 1.2rem;
   border-radius: 15px;

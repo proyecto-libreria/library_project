@@ -38,6 +38,51 @@ function makeCard(book) {
   let titleBook = document.createElement('h2')
   titleBook.textContent = book.title
 
+    let publisherSpan = document.createElement('span');
+    publisherSpan.textContent = book.editorial;
+    publisherSpan.classList.add('publisher');
+
+    let editButton = document.createElement('button');
+    editButton.textContent = 'Editar';
+    editButton.classList.add('edit-button');
+
+    let isEditing = false; // Variable para tracking si se está editando
+
+    editButton.addEventListener('click', function() {
+      if (!isEditing) { // Si no se está editando, permitir editar
+        isEditing = true; // Marcar como editando
+        editButton.disabled = true; // Deshabilitar botón "Editar"
+
+        // Mostrar formulario para editar el valor
+        let editForm = document.createElement('div');
+        editForm.classList.add('edit-form');
+
+        let editInput = document.createElement('input');
+        editInput.classList.add('input-edit')
+        editInput.type = 'text';
+        editInput.value = book.editorial;
+
+        let saveButton = document.createElement('button');
+        saveButton.textContent = '✓';
+        saveButton.classList.add('btn-save')
+
+        saveButton.addEventListener('click', function() {
+          // Guardar el valor editado en el objeto book
+          book.editorial = editInput.value;
+          publisherSpan.textContent = book.editorial;
+          editForm.remove(); // Ocultar formulario
+          isEditing = false; // Marcar como no editando
+          editButton.disabled = false; // Habilitar botón "Editar" nuevamente
+        });
+
+        editForm.appendChild(editInput);
+        editForm.appendChild(saveButton);
+        descriptionBook.appendChild(editForm);
+      }
+    });
+
+              
+
   let bookAuthor = document.createElement('h3')
   bookAuthor.textContent = `Autor: ${book.author}`
   bookAuthor.classList.add('authorBook')
@@ -66,6 +111,8 @@ function makeCard(book) {
   descriptionBook.appendChild(bookDescription)
   descriptionBook.appendChild(pagesBook)
   descriptionBook.appendChild(priceBook)
+  descriptionBook.appendChild(publisherSpan);
+  descriptionBook.appendChild(editButton);
   descriptionBook.appendChild(btnBuy)
   
   bookCard.appendChild(bookPhoto)
