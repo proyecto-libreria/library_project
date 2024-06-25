@@ -137,10 +137,13 @@ h2 {
 }
 
 .style-opt{
-    
-    border-radius: 5px;
+    border-radius: 15px;
+    background-color: transparent;
+    border-width: 1px;
+    color: #000000;
     
 }
+
 
 
 

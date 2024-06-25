@@ -12,7 +12,7 @@ const ReadersDays =  document.getElementById('Readers-Day').addEventListener('cl
 const searchTitle = document.getElementById('select-title').addEventListener('click', searchToTitle)
 const searchAuthor =  document.getElementById('select-author').addEventListener('click', searchToAuthor)
 const searchPrices = document.getElementById('select-price').addEventListener('click', searchToPrice)
-
+const filterStock =  document.getElementById('filter-stock').addEventListener('click', filterToStock)
 
 window.addEventListener('DOMContentLoaded', generateCard)
 
@@ -90,6 +90,52 @@ function makeCard(book) {
   bookAuthor.textContent = `Autor: ${book.author}`
   bookAuthor.classList.add('authorBook')
 
+        let stockSpan = document.createElement('span');
+        stockSpan.classList.add('stock');
+
+        if (book.stock === 1) {
+          stockSpan.textContent = 'En stock';
+        } else if (book.stock === 0) {
+          stockSpan.textContent = 'Agotado';
+        } else {
+          stockSpan.textContent = `Disponible (${book.stock})`;
+        }
+
+        let incrementButton = document.createElement('button');
+        incrementButton.textContent = '+';
+        incrementButton.classList.add('increment-button');
+
+        let decrementButton = document.createElement('button');
+        decrementButton.textContent = '-';
+        decrementButton.classList.add('decrement-button');
+
+        incrementButton.addEventListener('click', function() {
+          book.stock++;
+          updateStockSpan(book, stockSpan);
+        });
+
+        decrementButton.addEventListener('click', function() {
+          if (book.stock > 0) {
+            book.stock--;
+            updateStockSpan(book, stockSpan);
+          }
+        });
+
+        
+
+        // ...
+
+        function updateStockSpan(book, stockSpan) {
+          if (book.stock === 1) {
+            stockSpan.textContent = 'En stock';
+          } else if (book.stock === 0) {
+            stockSpan.textContent = 'Agotado';
+          } else {
+            stockSpan.textContent = `Disponible (${book.stock})`;
+          }
+        }
+
+
   let bookDescription = document.createElement('p')
   bookDescription.textContent = book.description
   bookDescription.classList.add('description')
@@ -102,6 +148,7 @@ function makeCard(book) {
 
   let btnBuy = document.createElement('button')
   btnBuy.textContent = 'Comprar'
+  btnBuy.classList.add('btn-buy')
 
   btnBuy.addEventListener('click', function() {
     window.location.href = 'login.html'; 
@@ -115,6 +162,9 @@ function makeCard(book) {
   descriptionBook.appendChild(pagesBook)
   descriptionBook.appendChild(priceBook)
   descriptionBook.appendChild(publisherSpan);
+  descriptionBook.appendChild(stockSpan);
+  descriptionBook.appendChild(incrementButton); 
+  descriptionBook.appendChild(decrementButton);
   descriptionBook.appendChild(editButton);
   descriptionBook.appendChild(btnBuy)
   
@@ -124,6 +174,27 @@ function makeCard(book) {
   containerBooks.appendChild(bookCard)
   return bookCard;
 } 
+
+function filterToStock(event) {
+  containerBooks.innerHTML = '';
+
+  if (event.target.value === 'everything') {
+    generateCard();
+  } else if (event.target.value === 'inStock') {
+    books.forEach(book => {
+      if (book.stock === 1) {
+        makeCard(book);
+      }
+    });
+  } else if (event.target.value === 'outOfStock') {
+    books.forEach(book => {
+      if (book.stock === 0) {
+        makeCard(book);
+      }
+    });
+  }
+}
+
 
 
 function searchToAuthor(event) {

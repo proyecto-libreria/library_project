@@ -84,7 +84,7 @@ main {
 
 .book {
   width: 28rem;
-  height: 27rem;
+  height: 31rem;
   border: double 5px gray;
   border-radius: 5px;  
   margin: 1rem;
@@ -98,6 +98,7 @@ main {
   border-radius: 5px;
   
 }
+
 
 .btn-save{
   width: 17px;
@@ -153,10 +154,19 @@ main {
   font-size: 1rem;
   margin-left: 1rem;
   text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .book-description > p{
   font-size: 0.9rem;
+  margin-left: 0.8rem;
+  margin-bottom: 0.9rem;
+}
+
+.book-description > span{
+  font: bolder;
+  font-size: 1rem;
   margin-left: 0.8rem;
   margin-bottom: 0.9rem;
 }
@@ -171,7 +181,41 @@ main {
   font-weight: 900;
 }
 
-.book-description > button {
+
+.increment-button{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  width: 30%;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  font-weight: 600;
+  background-color: #ff9999;
+  color: #fff;
+  cursor: pointer;  
+  transition: background-color 0.3s ease;
+  position: relative;
+  right: 40px;
+  top: 8px;
+}
+.decrement-button{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  width: 30%;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  font-weight: 600;
+  background-color: #ff9999;
+  color: #fff;
+  cursor: pointer;  
+  transition: background-color 0.3s ease;
+  position: relative;
+  
+  left:  60px;
+  bottom: 30px;
+}
+
+
+.edit-button,.btn-save,.btn-buy{
   margin-top: 0;
   margin-bottom: 0.5rem;
   width: 80%;
@@ -182,11 +226,13 @@ main {
   color: #fff;
   cursor: pointer;  
   transition: background-color 0.3s ease;
+  position: relative;
+  bottom: 15px;
 }
 
 .book-description > button:hover,
 .book-description > button:focus {
-  background-color: #366f36;
+  background-color: #ebbf81;
 }
 
 #btnSort {
