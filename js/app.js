@@ -154,6 +154,21 @@ function makeCard(book) {
     window.location.href = 'login.html'; 
   });
 
+
+
+  let btnDelete = document.createElement('button')
+  btnDelete.textContent = 'eliminar libro'
+  btnDelete.classList.add('btn-buy')
+
+  btnDelete.addEventListener('click', function() {
+    // Eliminar el libro del arreglo 'books'
+    const bookIndex = books.findIndex(libreriaBook => libreriaBook.title === book.title); // propiedad única del libro
+    books.splice(bookIndex, 1);
+    // Actualizar la página para reflejar el cambio
+    containerBooks.innerHTML = ''; // Borrar todas las tarjetas existentes
+    generateCard(); // Volver a generar las tarjetas con los libros actualizados
+  });
+
   bookPhoto.appendChild(imgBook)
   
   descriptionBook.appendChild(titleBook)
@@ -166,7 +181,8 @@ function makeCard(book) {
   descriptionBook.appendChild(incrementButton); 
   descriptionBook.appendChild(decrementButton);
   descriptionBook.appendChild(editButton);
-  descriptionBook.appendChild(btnBuy)
+  descriptionBook.appendChild(btnBuy);
+  descriptionBook.appendChild(btnDelete)
   
   bookCard.appendChild(bookPhoto)
   bookCard.appendChild(descriptionBook)
