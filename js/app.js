@@ -9,6 +9,9 @@ const filterPages = document.getElementById('btn-pages').addEventListener('click
 const filterPrice =  document.getElementById('btn-prices').addEventListener('click', filterToPrices)
 const showExpensiveBooks = document.getElementById('btn-expensiveBooks').addEventListener('click', expensiveBooks)
 const ReadersDays =  document.getElementById('Readers-Day').addEventListener('click', ReadersDay)
+const searchTitle = document.getElementById('select-title').addEventListener('click', searchToTitle)
+const searchAuthor =  document.getElementById('select-author').addEventListener('click', searchToAuthor)
+const searchPrices = document.getElementById('select-price').addEventListener('click', searchToPrice)
 
 
 window.addEventListener('DOMContentLoaded', generateCard)
@@ -121,6 +124,55 @@ function makeCard(book) {
   containerBooks.appendChild(bookCard)
   return bookCard;
 } 
+
+
+function searchToAuthor(event) {
+  containerBooks.innerHTML = ''
+
+  if (event.target.value === 'everything') {
+    generateCard()    
+  } else {
+    books.forEach( book => {
+      if (book.author === event.target.value ) {
+        makeCard(book)
+      }
+    })
+  }  
+
+
+}
+
+function searchToPrice(event) {
+  
+  containerBooks.innerHTML = ''
+
+  if (event.target.value === 'everything') {
+    generateCard()    
+  } else {
+    books.forEach( book => {
+      if (book.price === event.target.value ) {
+        makeCard(book)
+      }
+    })
+  }  
+}
+
+
+
+
+function searchToTitle(event) {
+  containerBooks.innerHTML = ''
+
+  if (event.target.value === 'everything') {
+    generateCard()    
+  } else {
+    books.forEach( book => {
+      if (book.title === event.target.value ) {
+        makeCard(book)
+      }
+    })
+  }  
+}
 
 function filterToGender (event) {     
   containerBooks.innerHTML = ''
@@ -259,6 +311,48 @@ function ReadersDay() {
     
       let pagesBook = document.createElement('h3')
       pagesBook.textContent = `Paginas: ${book.pages}`
+      let publisherSpan = document.createElement('span');
+    publisherSpan.textContent = book.editorial;
+    publisherSpan.classList.add('publisher');
+
+    let editButton = document.createElement('button');
+    editButton.textContent = 'Editar';
+    editButton.classList.add('edit-button');
+
+    let isEditing = false; // Variable para tracking si se está editando
+
+    editButton.addEventListener('click', function() {
+      if (!isEditing) { // Si no se está editando, permitir editar
+        isEditing = true; // Marcar como editando
+        editButton.disabled = true; // Deshabilitar botón "Editar"
+
+        // Mostrar formulario para editar el valor
+        let editForm = document.createElement('div');
+        editForm.classList.add('edit-form');
+
+        let editInput = document.createElement('input');
+        editInput.classList.add('input-edit')
+        editInput.type = 'text';
+        editInput.value = book.editorial;
+
+        let saveButton = document.createElement('button');
+        saveButton.textContent = '✓';
+        saveButton.classList.add('btn-save')
+
+        saveButton.addEventListener('click', function() {
+          // Guardar el valor editado en el objeto book
+          book.editorial = editInput.value;
+          publisherSpan.textContent = book.editorial;
+          editForm.remove(); // Ocultar formulario
+          isEditing = false; // Marcar como no editando
+          editButton.disabled = false; // Habilitar botón "Editar" nuevamente
+        });
+
+        editForm.appendChild(editInput);
+        editForm.appendChild(saveButton);
+        descriptionBook.appendChild(editForm);
+      }
+    });
 
       let normalPriceBook = document.createElement('h3')
       normalPriceBook.innerHTML = `Precio normal: <del>${book.price}</del>COP`;
@@ -280,8 +374,10 @@ function ReadersDay() {
       descriptionBook.appendChild(bookAuthor)
       descriptionBook.appendChild(bookDescription)
       descriptionBook.appendChild(pagesBook)
+      descriptionBook.appendChild(publisherSpan); 
       descriptionBook.appendChild(normalPriceBook)
       descriptionBook.appendChild(priceBook)
+      descriptionBook.appendChild(editButton);
       descriptionBook.appendChild(btnBuy)
       
       bookCard.appendChild(bookPhoto)
@@ -365,6 +461,9 @@ function bookspages() {
   
     let bookPhoto = document.createElement('div')
     bookPhoto.classList.add('book-photo')
+
+    let pages =  document.createElement('h3')
+    pages.textContent =  `paginas: ${book.pages}`
   
     let imgBook = document.createElement('img')
     imgBook.src = book.image
@@ -395,6 +494,7 @@ function bookspages() {
     descriptionBook.appendChild(titleBook)
     descriptionBook.appendChild(bookAuthor)
     descriptionBook.appendChild(priceBook)
+    descriptionBook.appendChild(pages)
     descriptionBook.appendChild(btnBuy)
     
     

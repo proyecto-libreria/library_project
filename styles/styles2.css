@@ -20,8 +20,8 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #302929;
-    border-bottom: solid 4px lime;
+    background-color: #f6dfcf;
+    border-bottom: solid 4px #302929;
     height: 9vh;
 
 }
@@ -59,7 +59,7 @@ li {
 
 
 #text-color {
-    color: lime;
+    color: rgb(0, 0, 0);
     padding: 0px 10px;
 
 }
@@ -108,10 +108,15 @@ h2 {
     font-size: 23px;
 }
 
-.buttons{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+
+.style-btn{
+    font-size: 15px;
+    height: 50px;
+    background: linear-gradient(170deg, #ffffff 0%, #f5f5dc 150%);
+    border-radius: 5px;
+    border-color: #f5f5dc;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
 }
 
 
@@ -124,14 +129,19 @@ h2 {
 }
 
 .opt{
+    height: 50px;
     padding: 5px 5px 5px 5px;
     border-radius: 5px;
+    border-color:#f5f5dc;
+    background: linear-gradient(130deg, #ffffff 0%, #f5f5dc 120%);
 }
 
 .style-opt{
+    
     border-radius: 5px;
-    background-color: #4c23a4d9;
+    
 }
+
 
 
 
@@ -223,9 +233,11 @@ h2 {
 
 
 footer {
-    height: 35vh;
+    height: 40vh;
     width: 100%;
-    background-color: #1c2841;
+    background-image: url(./img/footer.jpg);
+    background-size: 100%  100%;
+    background-repeat: no-repeat;
     color: #ffffff;
     display: flex;
     justify-content: space-around;

@@ -15,7 +15,7 @@ body {
 
 header {
   width: 100vw;
-  height: auto;
+  height: 1rem
 }
 
 .navbar {
@@ -32,9 +32,40 @@ main {
   
 
 .container-filter {
+  
   width: 100%;
   display: flex;
   justify-content: space-around;
+  
+  margin-bottom: 50px;
+}
+
+.container-filter2{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.six-btn{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 50px;
+
+  
+}
+.six-btn2{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0px;
   margin-bottom: 50px;
 }
 
@@ -46,7 +77,9 @@ main {
   flex-wrap: wrap;
   background-color: aquamarine;
   background: rgb(255,255,255);
-  background: linear-gradient(130deg, #ffffff 0%, #00ff84 120%);
+  background: linear-gradient(130deg, #ffffff 0%, #f5f5dc 120%);
+  background-size: 100% 100%;
+  padding-bottom: 40px;
 }
 
 .book {
@@ -96,13 +129,13 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border-left: double 2px #5555cb;
+  border-left: double 2px #ff9999;
 }
 
 .book-description > h2 {
   margin-top: 10px;
   font-size: 1.5rem;
-  color: #5555cb;
+  color: #ff9999;
   text-align: center;
 }
 
@@ -145,7 +178,7 @@ main {
   font-size: 1.2rem;
   border-radius: 15px;
   font-weight: 600;
-  background-color: #0739f0c8;
+  background-color: #ff9999;
   color: #fff;
   cursor: pointer;  
   transition: background-color 0.3s ease;
@@ -159,6 +192,36 @@ main {
 #btnSort {
   width: 10rem;
   border-radius: 15px;
-  border: double 5px #047b93;
+  border-color: #f5f5dc;
+}
+
+
+.informationFooter{
+  display: flex;
+  justify-content: space-around;
+}
+
+.member-names{
+  font-size: 20px;
+}
+
+.emails{
+  font-size: 20px;
+}
+
+.numbers{
+  font-size: 20px;
+}
+
+.network-logos{
+  width: auto
+}
+
+.imgFooter{
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 140px;
+  left: 105px;
 }
 
