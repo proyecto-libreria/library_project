@@ -112,9 +112,9 @@ h2 {
 .style-btn{
     font-size: 15px;
     height: 50px;
-    background: linear-gradient(170deg, #ffffff 0%, #f5f5dc 150%);
-    border-radius: 5px;
-    border-color: #f5f5dc;
+    background: linear-gradient(170deg, #ffffff 0%, #ffcc99 150%);
+    border-radius: 15px;
+    border-color: #333333;
     cursor: pointer;
     padding: 5px 5px 5px 5px;
 }
@@ -131,9 +131,9 @@ h2 {
 .opt{
     height: 50px;
     padding: 5px 5px 5px 5px;
-    border-radius: 5px;
-    border-color:#f5f5dc;
-    background: linear-gradient(130deg, #ffffff 0%, #f5f5dc 120%);
+    border-radius: 15px;
+    border-color:#333333;
+    background: linear-gradient(130deg, #ffffff 0%, #ffcc99 120%);
 }
 
 .style-opt{
