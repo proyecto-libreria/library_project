@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #30d0216b;
+    background-image: url(./img/login.jfif);
 }
 
 header {
@@ -17,13 +17,14 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #302929;
-    border-bottom: solid 4px lime;
+    background-color: #f6dfcf;
+    border-bottom: solid 4px #302929;
     height: 9vh;
+
 }
 
 .home{
-    color: #fff;
+    color: #000000;
     position: relative;
     left: 80rem;
 }
@@ -44,7 +45,7 @@ nav {
 
 
 #text-color {
-    color: lime;
+    color: rgb(0, 0, 0);
     padding: 0px 10px;
 
 }
