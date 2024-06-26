@@ -157,7 +157,7 @@ function makeCard(book) {
 
 
   let btnDelete = document.createElement('button')
-  btnDelete.textContent = 'eliminar libro'
+  btnDelete.textContent = 'Eliminar libro'
   btnDelete.classList.add('btn-buy')
 
   btnDelete.addEventListener('click', function() {
@@ -208,7 +208,14 @@ function filterToStock(event) {
         makeCard(book);
       }
     });
-  }
+  } else if (event.target.value === "available") {
+    books.forEach(book => {
+      if (book.stock >= 2) {
+        makeCard(book);
+    }
+    
+  });
+}
 }
 
 
@@ -299,6 +306,7 @@ function filterToGender (event) {
   
     let btnBuy = document.createElement('button')
     btnBuy.textContent = 'Comprar'
+    btnBuy.classList.add('btn-buy')
 
     btnBuy.addEventListener('click', function() {
       window.location.href = 'login.html'; 
@@ -399,8 +407,8 @@ function ReadersDay() {
       let pagesBook = document.createElement('h3')
       pagesBook.textContent = `Paginas: ${book.pages}`
       let publisherSpan = document.createElement('span');
-    publisherSpan.textContent = book.editorial;
-    publisherSpan.classList.add('publisher');
+      publisherSpan.textContent = book.editorial;
+      publisherSpan.classList.add('publisher');
 
     let editButton = document.createElement('button');
     editButton.textContent = 'Editar';
@@ -450,6 +458,7 @@ function ReadersDay() {
     
       let btnBuy = document.createElement('button')
       btnBuy.textContent = 'Comprar'
+      btnBuy.classList.add('btn-buy')
     
       btnBuy.addEventListener('click', function() {
         window.location.href = 'login.html'; 
@@ -511,6 +520,7 @@ function filterToPrices() {
   
     let btnBuy = document.createElement('button')
     btnBuy.textContent = 'Comprar'
+    btnBuy.classList.add('btn-buy')
     btnBuy.addEventListener('click', function() {
       window.location.href = 'login.html'; 
     });
@@ -570,6 +580,7 @@ function bookspages() {
   
     let btnBuy = document.createElement('button')
     btnBuy.textContent = 'Comprar'
+    btnBuy.classList.add('btn-buy')
     btnBuy.addEventListener('click', function() {
       window.location.href = 'login.html'; 
     });
