@@ -84,7 +84,7 @@ main {
 
 .book {
   width: 28rem;
-  height: 35rem;
+  height: 38rem;
   border: double 5px gray;
   border-radius: 5px;  
   margin: 1rem;
@@ -93,10 +93,15 @@ main {
 }
 
 .input-edit{
+  height: 20px;
   margin-bottom: 15px;
   background-color: #00ff8400;
   border-radius: 5px;
-  
+  position: relative;
+  left: 10px;
+  background-color:#ff99999c ;
+  padding-left: 5px;
+  border-color: #ebbf81;
 }
 
 
@@ -106,6 +111,8 @@ main {
   background-color: #00ff8471;  
   cursor: pointer;
   margin-left: 10px;
+  position: relative;
+  top: 5px;
 }
 
 .book-photo {
